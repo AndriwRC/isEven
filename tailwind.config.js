@@ -9,12 +9,16 @@ module.exports = {
                     '4px 4px 12px rgba(250, 250, 250, 0.3)',
                 ],
                 'success-1': '0px 0px 24px rgba(74, 222, 128, 0.4)',
+                'error-1': '0px 0px 24px rgba(185, 28, 28, 0.4)',
             },
             minWidth: {
-                328: '328px',
+                320: '320px',
             },
             minHeight: {
                 256: '256px',
+            },
+            screens: {
+                xs: '360px',
             },
         },
     },
