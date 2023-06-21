@@ -8,8 +8,31 @@
     <link rel="stylesheet" href="../public/tailwind.css">
 </head>
 
-<body>
-    <h1 class="text-3xl font-bold underline">Hello World!</h1>
+<body class="py-8 px-4 flex flex-col min-h-screen gap-8 bg-neutral-900">
+    <button>Toggle Dark</button>
+    <h1 class="font-sans font-medium text-3xl text-center text-neutral-50 drop-shadow-title-1">Check if a number is
+        Even or Not</h1>
+
+    <div class="flex flex-col justify-between min-w-328 min-h-256 bg-neutral-800 rounded-lg p-4">
+        <label for="number" class="text-neutral-50 text-xl font-medium">Type a number:</label>
+        <input type="number" name="number" id="number"
+            class="outline-none bg-transparent border-b-2 border-b-neutral-50 text-6xl text-center text-neutral-50 pb-1 font-medium placeholder:opacity-20"
+            placeholder="13">
+        <button type="button"
+            class="w-24 h-9 bg-blue-500 bg-opacity-25 rounded-lg self-center text-neutral-50 text-sm font-medium">CHECK</button>
+
+
+    </div>
+
+
+    <p class="w-80 h-16 bg-green-400 bg-opacity-25 rounded-lg border-2 border-green-400 drop-shadow-success-1 text-neutral-50 text-center grid place-content-center font-medium text-xl"
+        style="display: none;">
+        The
+        number is Even</p>
+
+    <p
+        class="w-80 h-16 bg-neutral-800 rounded-lg  text-neutral-500 text-center grid place-content-center text-lg italic self-center">
+        Here you're gonna get the result</p>
 </body>
 
 </html>
