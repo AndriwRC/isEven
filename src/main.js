@@ -52,11 +52,11 @@ function loadBtnIcon() {
     if (html.classList.contains('dark')) {
         localStorage.theme = 'dark';
 
-        switchBtnImg.src = './images/switch-dark.svg';
+        switchBtnImg.src = './public/images/switch-dark.svg';
     } else {
         localStorage.theme = 'light';
 
-        switchBtnImg.src = './images/switch-light.svg';
+        switchBtnImg.src = './public/images/switch-light.svg';
     }
 }
 
