@@ -10,35 +10,35 @@
     <script src="./src/main.js" defer></script>
 </head>
 
-<body class="py-8 xs:px-4 w-screen flex flex-col min-h-screen max-md:gap-8 bg-neutral-900 md:justify-around">
-    <button class="md:absolute top-8 left-16">Toggle Dark</button>
-    <h1 class="font-sans font-medium text-3xl text-center text-neutral-50 drop-shadow-title-1">Check if a number is
+<body
+    class="py-8 xs:px-4 w-screen flex flex-col min-h-screen max-md:gap-8 bg-neutral-50 dark:bg-neutral-900 md:justify-around">
+    <button class="md:absolute top-8 left-16 w-fit ml-2"><img id="switchBtnImg" alt="Toggle Dark Mode"></button>
+    <h1 class="font-sans font-medium text-3xl text-center text-neutral-800 dark:text-neutral-50 drop-shadow-title-1">
+        Check
+        if a number is
         Even or Not</h1>
 
     <div
-        class="flex flex-col justify-between min-w-320 min-h-256 bg-neutral-800 xs:rounded-lg p-4 max-w-lg sm:self-center">
-        <label for="number" class="text-neutral-50 text-xl font-medium">Type a number:</label>
+        class="flex flex-col justify-between min-w-320 min-h-256 bg-blue-500 bg-opacity-25 dark:bg-neutral-800 dark:bg-opacity-100 xs:rounded-lg p-4 max-w-lg sm:self-center">
+        <label for="number" class="text-neutral-800 dark:text-neutral-50 text-xl font-medium">Type a number:</label>
         <input type="number" name="number" id="number"
-            class="appearance-none outline-none bg-transparent border-b-2 border-b-neutral-50 text-6xl text-center text-neutral-50 pb-1 font-medium placeholder:opacity-20"
+            class="appearance-none outline-none bg-transparent border-b-2 border-b-neutral-800 dark:border-b-neutral-50 text-6xl text-center text-neutral-800 dark:text-neutral-50 pb-1 font-medium dark:placeholder:opacity-20"
             placeholder="13">
         <button type="button"
-            class="w-24 h-9 bg-blue-500 bg-opacity-25 rounded-lg self-center text-neutral-50 text-sm font-medium"
+            class="w-24 h-9 bg-blue-500 dark:bg-opacity-25 rounded-lg self-center text-neutral-50 text-sm font-medium"
             id="checkBtn">CHECK</button>
 
 
     </div>
 
-    <p class="w-80 h-16 bg-green-400 bg-opacity-25 xs:rounded-lg border-2 border-green-400 drop-shadow-success-1 text-neutral-50 text-center grid place-content-center font-medium text-xl inactive self-center"
-        id="even">
+    <p class="alert success inactive" id="even">
         The
         number is Even</p>
-    <p class="w-80 h-16 bg-red-700 bg-opacity-25 xs:rounded-lg border-2 border-red-700 drop-shadow-error-1 text-neutral-50 text-center grid place-content-center font-medium text-xl inactive self-center"
-        id="odd">
+    <p class="alert error inactive" id="odd">
         The
         number is Odd</p>
 
-    <p class="w-80 h-16 bg-neutral-800 xs:rounded-lg  text-neutral-500 text-center grid place-content-center text-lg italic self-center"
-        id="defaultMessage">
+    <p class="alert default" id="defaultMessage">
         Here you're gonna get the result</p>
 
 </body>

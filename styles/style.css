@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.success {
+    @apply border-green-600 bg-green-600 drop-shadow-success-1 dark:border-green-400 dark:bg-green-400;
+}
+.error {
+    @apply border-red-700 bg-red-700 drop-shadow-error-1;
+}
+.alert {
+    @apply grid h-16 w-80 place-content-center self-center border-2 text-center text-xl font-medium text-neutral-50 dark:bg-opacity-25 xs:rounded-lg;
+}
+.default {
+    @apply border-none bg-blue-500 bg-opacity-25 font-normal italic text-neutral-500 dark:bg-neutral-800;
+}
+
 .inactive {
     display: none;
 }
